@@ -1,0 +1,10 @@
+{
+    "version": 2,
+    "builds": [
+      { "src": "api-humanize.js", "use": "@vercel/node" }
+    ],
+    "routes": [
+      { "src": "/humanize", "methods": ["POST"], "dest": "api-humanize.js" }
+    ]
+  }
+  
